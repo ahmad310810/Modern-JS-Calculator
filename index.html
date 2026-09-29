@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Modern responsive calculator built with HTML, CSS and JavaScript.">
+    <meta name="author" content="Muhammad Ahmad">
+
+    <title>Modern Calculator | Muhammad Ahmad</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="calculator-wrapper">
+
+        <section class="calculator">
+
+            <!-- Calculator Header -->
+            <div class="calculator-header">
+                <div>
+                    <span class="mini-label">PROJECT</span>
+                    <h1>Calculator</h1>
+                </div>
+
+                <div class="status">
+                    <span></span>
+                    Ready
+                </div>
+            </div>
+
+            <!-- Display -->
+            <div class="display">
+
+                <div class="previous-value" id="previousValue"></div>
+
+                <div class="current-value" id="currentValue">
+                    0
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button class="btn function" data-action="clear">AC</button>
+                <button class="btn function" data-action="delete">DEL</button>
+                <button class="btn function" data-action="percent">%</button>
+                <button class="btn operator" data-operation="÷">÷</button>
+
+                <button class="btn number" data-number="7">7</button>
+                <button class="btn number" data-number="8">8</button>
+                <button class="btn number" data-number="9">9</button>
+                <button class="btn operator" data-operation="×">×</button>
+
+                <button class="btn number" data-number="4">4</button>
+                <button class="btn number" data-number="5">5</button>
+                <button class="btn number" data-number="6">6</button>
+                <button class="btn operator" data-operation="-">−</button>
+
+                <button class="btn number" data-number="1">1</button>
+                <button class="btn number" data-number="2">2</button>
+                <button class="btn number" data-number="3">3</button>
+                <button class="btn operator" data-operation="+">+</button>
+
+                <button class="btn number zero" data-number="0">0</button>
+                <button class="btn number" data-number=".">.</button>
+                <button class="btn equal" data-action="calculate">=</button>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="calculator-footer">
+                <span>Made</span>
+                <span>by</span>
+                <span id="name">Muhammad Ahmad</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
